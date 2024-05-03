@@ -1,0 +1,86 @@
+*,
+:after ,
+:before{
+    padding: 0;
+    margin : 0 ;
+    color: rgb(231, 229, 229);
+}
+body {
+    background-color: rgb(50, 50, 50);
+    display: flex;
+
+}
+nav {
+    width : 300px ; 
+    background-color : rgb(37, 37, 37) ; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between; 
+    height: 95vh;
+}
+
+nav ul li {
+    list-style: none ;
+    font-size : 20px ; 
+    padding : 10px 20px ; 
+    transition: all .2s ;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+nav ul .active{
+    background-color : rgb(80, 80, 80) ; 
+}
+nav ul li:hover {
+    background-color : rgb(80, 80, 80) ; 
+}
+nav ul .active:after {
+    content: "";
+    width : 3px ;
+    height : 25px ;
+    background-color: rgb(7, 122, 194);
+    position: absolute;
+    left : -1.5px ;
+    border-radius: 5px;
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+ /* style box of chrono */
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.box .hour {
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box .buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.box .buttons button {
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+.box .buttons button:hover {
+    box-shadow: 0 0 20px black;
+    transform:rotate(2deg);
+}
+.box .buttons button:nth-child(1){
+    background-color: green;
+}
+.box .buttons button:nth-child(2){
+    background-color: red;
+}
+.box .buttons button:nth-child(3){
+    background-color: blue;
+}
