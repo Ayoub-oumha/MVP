@@ -29,6 +29,9 @@ nav ul li {
     border-radius: 10px;
     margin-top: 10px;
     position: relative;
+    display: flex;
+    align-items: center;
+    
 }
 nav ul .active{
     background-color : rgb(80, 80, 80) ; 
@@ -83,4 +86,8 @@ nav ul .active:after {
 }
 .box .buttons button:nth-child(3){
     background-color: blue;
+}
+ul li img {
+    width: 25px;
+    padding-right: 10px;
 }
