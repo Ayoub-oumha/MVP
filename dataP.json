@@ -1,0 +1,39 @@
+[
+    
+    {
+        "NP" : "P1" ,
+        "title" : "KIKIM RUG BEIGE BROWN GRAY VARIOUS PATTERNS" ,
+        "price" : "$549.99" ,
+        "details" :"Kilim carpet woven in wool cotton in shades of beige and brown with very varied and different patterns on various parts of the carpet for a very aesthetic and refined visual ensemble." ,
+        "imag1" : "/images-2/product-one-img/img-cart-1.jpg" ,
+        "imag2" : "/images-2/product-one-img/img-cart-2.jpg" ,
+        "imag3" : "/images-2/product-one-img/img-cart-3.jpg" 
+    } ,
+    {
+        "NP" : "P2" ,
+        "title" : "COLORFUL KILIM RUG IN DECORATED RECTANGLES" ,
+        "price" : "$350.00" ,
+        "details" :"Very beautiful Kilim colored and worked in weaving of decorated and varied rectangles. Very aesthetic for a particularly refined wool cotton weaving work. Perfect carpet in a hallway!" ,
+        "imag1" : "/images-2/product-2-img/img-cart-1.jpg" ,
+        "imag2" : "/images-2/product-2-img/img-cart-2.jpg" ,
+        "imag3" : "/images-2/product-2-img/img-cart-3.jpg" 
+    } ,
+    {
+        "NP" : "P3" ,
+        "title" : "KILIM RUG COTTON AND WOOL, BLUE, YELLOW, GREEN" ,
+        "price" : "$630.00" ,
+        "details" :"Kilim rug which mixes the weaving of cotton wool and natural wool, here in shades of youth, blue and green for a beautiful ensemble. A beautiful aesthetic for this rug with various patterns." ,
+        "imag1" : "/images-2/product-3-img/img-cart-1.jpg" ,
+        "imag2" : "/images-2/product-3-img/img-cart-2.jpg" ,
+        "imag3" : "/images-2/product-3-img/img-cart-3.jpg" 
+    } ,
+    {
+        "NP" : "P4" ,
+        "title" : "BROWN, ORANGE AND GREEN KILIM RUG" ,
+        "price" : "$280.00" ,
+        "details" :"Small Kilim rug from the city of Khemisset is flat-woven in wool cotton in dominant shades of brown, orange and green. The patterns appear in relief, fringes are at both ends." ,
+        "imag1" : "/images-2/product-4-img/img-cart-1.jpg" ,
+        "imag2" : "/images-2/product-4-img/img-cart-2.jpg" ,
+        "imag3" : "/images-2/product-4-img/img-cart-3.jpg" 
+    }
+]

@@ -1,0 +1,104 @@
+.shop-product{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #77777742;
+    padding: 50px;
+}
+.shop-product .section-images {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    
+}
+.shop-product .section-images .big-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:  1px solid rgba(157, 155, 155, 0.392)   ;
+    height: 400px;
+    
+}
+.shop-product .section-images .big-image img {
+    width: 80%;
+    
+}
+
+.shop-product .section-images .other-images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border:  1px solid rgba(157, 155, 155, 0.392)   ;
+}
+.shop-product .section-images .other-images img {
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.shop-product .section-images .other-images img:hover{
+    transform:scale(130%)
+}
+.shop-product .section-price-and-details {
+    width: 60%;
+    padding: 30px;
+}
+.shop-product .section-price-and-details button {
+    padding: 10px;
+    background-color:rgb(227, 160, 27);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.shop-product .section-price-and-details button:hover{
+    transform:scale(110%) ;
+    background-color:rgb(237, 143, 3);
+}
+.shop-product .section-price-and-details .price {
+    color:rgb(237, 143, 3);
+}
+
+/* style responsive */
+@media screen and (max-width : 899px) {
+    .shop-product .section-images .other-images img {
+        width: 60px;
+        margin: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+} 
+
+@media screen and (max-width : 600px) {
+
+    .shop-product{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-bottom: 1px solid #77777742;
+        padding: 0px;
+    }
+    
+    .shop-product .section-images {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .shop-product .section-price-and-details {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .shop-product .section-price-and-details .title-of-product{
+        font-size: 20px;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carpet-Berber</title>
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- favicon -->
+    <link rel="icon" href="logo icon.ico" />
+    <!-- css style -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <style>
+        table {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+        table tr {
+            text-align: center;
+            box-shadow: 0 1px 0px rgba(0, 0, 0, 0.362);
+            
+        }
+        table thead tr th {
+            padding: 10px;
+            
+        }
+        table tr th img {
+            width: 100px;
+        }
+        table tr th  i{
+            color: rgb(228, 6, 6);
+            font-size: 24px;
+            cursor: pointer;
+            transition: .3s;
+        }
+        table tr th  i:hover{
+            transform:scale(120%);
+        }
+        table tr th  h3 , table tr th  div ,
+        table tr th  input {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        table tr th  input {
+            outline: none;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="header">
+            <a href="index.html"  class="log">
+                <img src="LOGO.png" alt="logo">
+            </a>
+
+            <ul>
+                <li><a  href="index.html">Home</a></li>
+                <li><a  href="shop.html">Shop</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-shop basket"><a  class="active"  href="basket.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a  class="clos-btn" href="#"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+
+            <div class="phone-view">
+                <a href="basket.html"><i class="fa-solid fa-bag-shopping"></i></a>
+                <i id="btn-nav" class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <!-- banner  -->
+    <section class="banner" style="margin: 0;">
+        <p class="filter"></p>
+        <h2>#Cart <i  class="fa-solid fa-bag-shopping"></i></h2> 
+        <p style="color: white; z-index: 10; font-size: 22px;"></p>  
+    </section>
+    <table>
+        <thead>
+            <tr>
+                <th>REMOVE</th>
+                <th>IMAGE</th>
+                <th>PRODUCT</th>
+                <th>PRICE</th>
+                <th>QUANTITIY</th>
+                <th>SUBTOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th><i class="fa-regular fa-circle-xmark"></i></th>
+                <th><img src="images-2/img 1.jpg"  alt=""></th>
+                <th><h3>THIS is product</h3></th>
+                <th><div>120</div></th>
+                <th><input type="number" min="1" max="5" value="1"></th>
+                <th><div>120</div></th>
+            </tr>
+            <tr>
+                <th><i class="fa-regular fa-circle-xmark"></i></th>
+                <th><img src="images-2/img 1.jpg"  alt=""></th>
+                <th><h3>THIS is product</h3></th>
+                <th><div>120</div></th>
+                <th><input type="number" min="1" max="5" value="1"></th>
+                <th><div>120</div></th>
+            </tr>
+        </tbody>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <div class="cartTotale">
+        <table>
+            <tr>
+                
+            </tr>
+        </table>
+    </div>
+    <!-- Footer Deja wajd hit fih bzaf tl content -->
+    <footer class="section-p1">
+        <div class="col">
+            <img src="./LOGO.png" alt="logo" class="logo" />
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>Guiliz Marrakech, Morocco</p>
+            <p><strong>Phone:</strong>+212637470236</p>
+            <p><strong>Hours:</strong>10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="./subpages/about.html">About Us</a>
+            <a href="./subpages/blog.html">Delivery Information</a>
+            <a href="./subpages/blog.html">Privacy Poilcy</a>
+            <a href="./subpages/blog.html">Terms &amp; Condition</a>
+            <a href="./subpages/contact.html">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#newsLetter">Sign In</a>
+            <a href="./subpages/cart.html">View Cart</a>
+            <a href="./subpages/shop.html">My WishList</a>
+            <a href="./subpages/sproduct.html">Track My Order</a>
+            <a href="./subpages/contact.html">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="./img/pay/app.jpg" alt="app" />
+                <img src="./img/pay/play.jpg" alt="play" />
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="./img/pay/pay.png" alt="pay" />
+        </div>
+
+    </footer>
+    <div class="copyright">
+        <p>©2024 CARPET BERBER. All Rights Reseverd.</p>
+    </div>
+        <script src="js/script.js" type="module"></script>
+        <script src="js/script-shop.js" type="module"></script>
+        <script src="js/script-sproduct.js" type="module"></script>
+</body>
+
+</html>
