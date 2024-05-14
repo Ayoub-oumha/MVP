@@ -17,5 +17,5 @@ tbody.appendChild(th)
 
 let btnAnuuler = document.getElementById("btnAnnule")
 th.onclick =  function(){
-    console.log("hllo")
+    
 }
