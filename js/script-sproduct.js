@@ -28,8 +28,6 @@ for (let i = 0; i < linkProducts.length; i++) {
         
     });
 }
-
-
 /**
  * variables of drtails price and title and images
  */
