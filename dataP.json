@@ -5,7 +5,7 @@
         "title" : "KIKIM RUG BEIGE BROWN GRAY VARIOUS PATTERNS" ,
         "price" : "$549.99" ,
         "details" :"Kilim carpet woven in wool cotton in shades of beige and brown with very varied and different patterns on various parts of the carpet for a very aesthetic and refined visual ensemble." ,
-        "imag1" : "/images-2/product-one-img/img-cart-1.jpg" ,
+        "imag1" : "../images-2/product-one-img/img-cart-1.jpg" ,
         "imag2" : "/images-2/product-one-img/img-cart-2.jpg" ,
         "imag3" : "/images-2/product-one-img/img-cart-3.jpg" 
     } ,

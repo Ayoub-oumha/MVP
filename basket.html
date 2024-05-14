@@ -14,40 +14,84 @@
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="CSS/responsive.css">
     <style>
-        table {
+        .tableOne {
             width: 100%;
             text-align: center;
             margin-top: 20px;
         }
-        table tr {
+        .tableOne tr {
             text-align: center;
             box-shadow: 0 1px 0px rgba(0, 0, 0, 0.362);
             
         }
-        table thead tr th {
+        .tableOne thead tr th {
             padding: 10px;
             
         }
-        table tr th img {
+        .tableOne tr th img {
             width: 100px;
         }
-        table tr th  i{
+        .tableOne tr th  i{
             color: rgb(228, 6, 6);
             font-size: 24px;
             cursor: pointer;
             transition: .3s;
         }
-        table tr th  i:hover{
+        .tableOne tr th  i:hover{
             transform:scale(120%);
         }
-        table tr th  h3 , table tr th  div ,
-        table tr th  input {
+        .tableOne tr th  h3 , table tr th  div ,
+        .tableOne tr th  input {
             font-size: 16px;
             font-weight: 500;
         }
-        table tr th  input {
+        .tableOne tr th  input {
             outline: none;
             padding: 8px;
+        }
+        .tableTwo {
+            width: 300px;
+            text-align: center;
+            margin-top: 20px;
+            margin-right: 60px;
+            
+            
+        }
+        .tableTwo tr {
+            text-align: center;
+            box-shadow: 0 1px 0px rgba(0, 0, 0, 0.362);
+            
+            
+        }
+        .tableTwo  tr th {
+            padding: 10px;
+            
+            
+        }
+        .tableTwo tr th:last-child{
+            font-weight: 300;
+            
+        }
+        .cartTotale {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            
+        }
+        .cartTotale button {
+            background-color: var(--primary-color);
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            margin: 10px;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            padding: 5px 10px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            margin-right: 80px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -82,7 +126,7 @@
         <h2>#Cart <i  class="fa-solid fa-bag-shopping"></i></h2> 
         <p style="color: white; z-index: 10; font-size: 22px;"></p>  
     </section>
-    <table>
+    <table class="tableOne">
         <thead>
             <tr>
                 <th>REMOVE</th>
@@ -93,23 +137,9 @@
                 <th>SUBTOTAL</th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <th><i class="fa-regular fa-circle-xmark"></i></th>
-                <th><img src="images-2/img 1.jpg"  alt=""></th>
-                <th><h3>THIS is product</h3></th>
-                <th><div>120</div></th>
-                <th><input type="number" min="1" max="5" value="1"></th>
-                <th><div>120</div></th>
-            </tr>
-            <tr>
-                <th><i class="fa-regular fa-circle-xmark"></i></th>
-                <th><img src="images-2/img 1.jpg"  alt=""></th>
-                <th><h3>THIS is product</h3></th>
-                <th><div>120</div></th>
-                <th><input type="number" min="1" max="5" value="1"></th>
-                <th><div>120</div></th>
-            </tr>
+        <tbody id="tbody">
+            
+            
         </tbody>
         <tbody>
 
@@ -117,11 +147,21 @@
     </table>
 
     <div class="cartTotale">
-        <table>
+        <table class="tableTwo">
             <tr>
-                
+                <th>Total</th>
+                <th>$590</th>
+            </tr>
+            <tr>
+                <th>shipping</th>
+                <th>free</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>$590</th>
             </tr>
         </table>
+        <button>PAY</button>
     </div>
     <!-- Footer Deja wajd hit fih bzaf tl content -->
     <footer class="section-p1">
@@ -176,7 +216,8 @@
     </div>
         <script src="js/script.js" type="module"></script>
         <script src="js/script-shop.js" type="module"></script>
-        <script src="js/script-sproduct.js" type="module"></script>
+        
+        <script src="js/scriptAddProductTobasket.js" type="module"></script>
 </body>
 
 </html>

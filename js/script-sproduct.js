@@ -6,6 +6,8 @@ let imgShoiwngDetails = document.querySelectorAll("#img-dt")
 
 
 
+
+
 imgShoiwngDetails.forEach(element => {
     element.addEventListener(("click") , function(){
         bigImg.src = element.src ;
@@ -22,7 +24,7 @@ for (let i = 0; i < linkProducts.length; i++) {
         
         window.sessionStorage.setItem("number-of-product", i );
         // Open the new page 
-        window.open("../sproduct.html", "_self");
+        open("./sproduct.html", "_self");
         
     });
 }
@@ -38,14 +40,14 @@ let img1 = document.querySelector(".img1") ;
 let img2 = document.querySelector(".img2") ;
 let img3 = document.querySelector(".img3") ;
 let Bigimg = document.querySelector(".BigImg") ;
-console.log(price)
+
 
 
 
 
 // read json
 
-fetch('../dataP.json')
+fetch('./dataP.json')
         .then(response => response.json()) // Parse the JSON response
         .then(data => {
             // Access the data
@@ -63,3 +65,13 @@ fetch('../dataP.json')
         })
         .catch(error => console.error('Error:', error)); // Handle errors
 
+// add product
+
+let buttonAdd = document.getElementById("add") 
+buttonAdd.onclick = function() {
+    let numberOfproduct = parseInt(sessionStorage.getItem("number-of-product"))
+    localStorage.setItem(`titleP${numberOfproduct}` , titlePro.textContent)
+    localStorage.setItem(`PricP${numberOfproduct}` , price.textContent)
+    localStorage.setItem(`imgP1${numberOfproduct}` , Bigimg.scr)
+    
+}
