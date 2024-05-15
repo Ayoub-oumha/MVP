@@ -43,12 +43,8 @@ for(let i = 0 ; i < numberOfclick   ; i++) {
     tbodyTbble.appendChild(tr)
     
 }
-//result
-let totl1 = document.getElementById("Total1")
-let totl2 = document.getElementById("Total2")
-let finalePrice = 0 ;
-let thOfPrice = document.querySelectorAll("thOfPrice")
 
+//var pf get icon
 let icon = document.querySelectorAll(".icon")
 let trTableOne = document.querySelectorAll(".trTableOne")
 
@@ -68,7 +64,19 @@ for (let j = 0 ; j < icon.length ; j ++) {
 
 }
 
+// variable of get price in html
 
+// var result
+let totl1 = document.getElementById("Total1")
+let totl2 = document.getElementById("Total2")
+let finalePrice = 0 ;
 
-console.log(thOfPrice)
+let thOfPrice = document.querySelectorAll(".thOfPrice")
+
+console.log (parseInt(thOfPrice[0].textContent[1]) )
+for(let k = 0 ; k < thOfPrice.length ; k++ ) {
+    finalePrice = +thOfPrice[k].textContent + finalePrice ;
+    console.log(parseInt(thOfPrice[k].textContent)  + finalePrice );
+}
+console.log(finalePrice)
 
