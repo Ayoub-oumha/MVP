@@ -29,21 +29,3 @@ btnSwith2.addEventListener("click" , ()=>{
     });
 })
 
-/** 
- * script picturs in sproduct.html
- * **/
-// let linkProducts = document.querySelectorAll(".img-of-product")
-// console.log(linkProducts)
-// fetch('../dataP.json')
-//         .then(response => response.json()) // Parse the JSON response
-//         .then(data => {
-//             // Access the data
-//             linkProducts.forEach(element => {
-//                 element.addEventListener(("click") , function(){
-//                     console.log("ho")
-//                     open("../sproduct.html" ,  "_self")
-//                 })
-//             });
-
-//         })
-//         .catch(error => console.error('Error:', error)); // Handle errors

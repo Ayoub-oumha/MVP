@@ -51,7 +51,6 @@ fetch('./dataP.json')
             // Access the data
                 let numberOfproduct = parseInt(sessionStorage.getItem("number-of-product"))
                 
-
                 titlePro.textContent = data[numberOfproduct].title ;
                 detailPro.textContent = data[numberOfproduct].details;
                 price.textContent = data[numberOfproduct].price ;
@@ -60,16 +59,29 @@ fetch('./dataP.json')
                 img1.src = data[numberOfproduct].imag1
                 img2.src = data[numberOfproduct].imag2
                 img3.src = data[numberOfproduct].imag3
+                
         })
         .catch(error => console.error('Error:', error)); // Handle errors
 
 // add product
+// Check if the item already exists in localStorage
+if (!localStorage.getItem('numberOfclick')) {
+    // If it doesn't exist, set its initial value to 0
+    localStorage.setItem('numberOfclick', '0');
+}
 
 let buttonAdd = document.getElementById("add") 
 buttonAdd.onclick = function() {
-    let numberOfproduct = parseInt(sessionStorage.getItem("number-of-product"))
-    localStorage.setItem(`titleP${numberOfproduct}` , titlePro.textContent)
-    localStorage.setItem(`PricP${numberOfproduct}` , price.textContent)
-    localStorage.setItem(`imgP1${numberOfproduct}` , Bigimg.scr)
+    // let numberOfproduct = parseInt(sessionStorage.getItem("number-of-product"))
+    let nn = localStorage.getItem("numberOfclick")
+    localStorage.setItem(`titleP${nn}` , titlePro.textContent)
+    localStorage.setItem(`PricP${nn}` , price.textContent)
+    localStorage.setItem(`imgP${nn}` , Bigimg.src)
+    
+    // localStorage.setItem("numberOFclick" , numberOfclick)
+    // // localStorage.setItem(`ID` , numberOfproduct)
+
+    nn++ ;
+    localStorage.setItem("numberOfclick" , nn)
     
 }

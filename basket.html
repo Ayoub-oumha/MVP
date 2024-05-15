@@ -28,27 +28,25 @@
             padding: 10px;
             
         }
-        .tableOne tr th img {
+        
+        .tableOne tr td img {
             width: 100px;
+            filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.485));
         }
-        .tableOne tr th  i{
+        .tableOne tr td i {
             color: rgb(228, 6, 6);
             font-size: 24px;
             cursor: pointer;
             transition: .3s;
         }
-        .tableOne tr th  i:hover{
+        .tableOne tr td  i:hover{
             transform:scale(120%);
         }
-        .tableOne tr th  h3 , table tr th  div ,
-        .tableOne tr th  input {
-            font-size: 16px;
+        .tableOne tr td {
+            font-size: 12px;
             font-weight: 500;
         }
-        .tableOne tr th  input {
-            outline: none;
-            padding: 8px;
-        }
+        
         .tableTwo {
             width: 300px;
             text-align: center;
@@ -132,9 +130,7 @@
                 <th>REMOVE</th>
                 <th>IMAGE</th>
                 <th>PRODUCT</th>
-                <th>PRICE</th>
-                <th>QUANTITIY</th>
-                <th>SUBTOTAL</th>
+                <th>PRICE</th>  
             </tr>
         </thead>
         <tbody id="tbody">
@@ -150,7 +146,7 @@
         <table class="tableTwo">
             <tr>
                 <th>Total</th>
-                <th>$590</th>
+                <th id="Total1">$590</th>
             </tr>
             <tr>
                 <th>shipping</th>
@@ -158,10 +154,11 @@
             </tr>
             <tr>
                 <th></th>
-                <th>$590</th>
+                <th id="Total2">$590</th>
+                
             </tr>
         </table>
-        <button>PAY</button>
+        
     </div>
     <!-- Footer Deja wajd hit fih bzaf tl content -->
     <footer class="section-p1">
