@@ -51,7 +51,7 @@ let thOfPrice = document.querySelectorAll("thOfPrice")
 
 let icon = document.querySelectorAll(".icon")
 let trTableOne = document.querySelectorAll(".trTableOne")
-console.log(icon.length)
+
 
 for (let j = 0 ; j < icon.length ; j ++) {
     icon[j].onclick = function(){
@@ -64,11 +64,11 @@ for (let j = 0 ; j < icon.length ; j ++) {
         trTableOne[j].remove()
     }
 
-    finalePrice = +thOfPrice[j] + finalePrice
+    
 
 }
 
 
 
-console.log(finalePrice)
+console.log(thOfPrice)
 
