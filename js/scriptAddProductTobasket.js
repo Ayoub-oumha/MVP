@@ -59,7 +59,7 @@ let finalePrice = 0 ;
 
 for (let j = 0 ; j < icon.length ; j ++) {
     icon[j].onclick = function(){
-       // finalePrice = finalePrice - parseInt(thOfPrice[0].textContent.slice(1)) ;
+        finalePrice = finalePrice - parseInt(thOfPrice[0].textContent.slice(1)) ;
         localStorage.removeItem("titleP"+j) ;
         localStorage.removeItem("PricP"+j) ;
         localStorage.removeItem("imgP" + j) ;
@@ -90,4 +90,5 @@ console.log(finalePrice)
 // }
 // totl1.textContent = "$" +finalePrice
 // totl2.textContent = totl1.textContent
+
 

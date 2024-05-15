@@ -553,3 +553,24 @@ section .info button {
 .other-info .text {
   width: 30%;
 }
+
+
+
+header nav .iconBasket {
+  position: relative;
+}
+header nav .iconBasket .span {
+  background-color: red;
+  color: white;
+  
+  border-radius: 50%;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  font-weight: 600;
+  padding-top: 1px;
+  left: -10px;
+  bottom: -10px ;
+  font-family: 'Courier New', Courier, monospace;
+}
