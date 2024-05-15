@@ -48,35 +48,46 @@ for(let i = 0 ; i < numberOfclick   ; i++) {
 let icon = document.querySelectorAll(".icon")
 let trTableOne = document.querySelectorAll(".trTableOne")
 
-
-for (let j = 0 ; j < icon.length ; j ++) {
-    icon[j].onclick = function(){
-        localStorage.removeItem("titleP"+j)
-        localStorage.removeItem("PricP"+j)
-        localStorage.removeItem("imgP" + j)
-        let nClick = localStorage.getItem("numberOfclick") ;
-        nClick-- ;
-        localStorage.setItem("numberOfclick" , nClick)
-        trTableOne[j].remove()
-    }
-
-    
-
-}
-
 // variable of get price in html
-
+let thOfPrice = document.querySelectorAll(".thOfPrice")
 // var result
 let totl1 = document.getElementById("Total1")
 let totl2 = document.getElementById("Total2")
 let finalePrice = 0 ;
 
-let thOfPrice = document.querySelectorAll(".thOfPrice")
 
-console.log (parseInt(thOfPrice[0].textContent[1]) )
+
+for (let j = 0 ; j < icon.length ; j ++) {
+    icon[j].onclick = function(){
+       // finalePrice = finalePrice - parseInt(thOfPrice[0].textContent.slice(1)) ;
+        localStorage.removeItem("titleP"+j) ;
+        localStorage.removeItem("PricP"+j) ;
+        localStorage.removeItem("imgP" + j) ;
+        let nClick = localStorage.getItem("numberOfclick") ;
+        nClick-- ;
+        localStorage.setItem("numberOfclick" , nClick) ;
+        trTableOne[j].remove() ;
+
+    }
+}
+
+
+
+// lop for price
+
+console.log (parseInt(thOfPrice[0].textContent.slice(1)) )
 for(let k = 0 ; k < thOfPrice.length ; k++ ) {
-    finalePrice = +thOfPrice[k].textContent + finalePrice ;
-    console.log(parseInt(thOfPrice[k].textContent)  + finalePrice );
+    finalePrice = parseInt(thOfPrice[k].textContent.slice(1)) + finalePrice ;
+    
 }
 console.log(finalePrice)
+
+// if(finalePrice == NaN) {
+//     totl1.textContent = "$" +0
+// }
+// else {
+//     totl1.textContent = "$" +finalePrice
+// }
+// totl1.textContent = "$" +finalePrice
+// totl2.textContent = totl1.textContent
 
