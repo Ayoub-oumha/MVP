@@ -41,8 +41,6 @@ let Bigimg = document.querySelector(".BigImg") ;
 
 
 
-
-
 // read json
 
 fetch('./dataP.json')
