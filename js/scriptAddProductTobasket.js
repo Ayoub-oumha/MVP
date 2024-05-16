@@ -56,7 +56,7 @@ let finalePrice = 0 ;
 
 for (let j = 0 ; j < icon.length ; j ++) {
     icon[j].onclick = function(){
-        finalePrice = finalePrice - parseInt(thOfPrice[0].textContent.slice(1)) ;
+        
         localStorage.removeItem("titleP"+j) ;
         localStorage.removeItem("PricP"+j) ;
         localStorage.removeItem("imgP" + j) ;
@@ -65,6 +65,13 @@ for (let j = 0 ; j < icon.length ; j ++) {
         localStorage.setItem("numberOfclick" , nClick) ;
         trTableOne[j].remove() ;
 
+        
+        let span = document.querySelectorAll(".span")
+
+        span.forEach((span)=>{
+        span.textContent = nClick
+})
+
     }
 }
 
@@ -72,12 +79,12 @@ for (let j = 0 ; j < icon.length ; j ++) {
 
 // lop for price
 
-console.log (parseInt(thOfPrice[0].textContent.slice(1)) )
-for(let k = 0 ; k < thOfPrice.length ; k++ ) {
-    finalePrice = parseInt(thOfPrice[k].textContent.slice(1)) + finalePrice ;
+// console.log (parseInt(thOfPrice[0].textContent.slice(1)) )
+// for(let k = 0 ; k < thOfPrice.length ; k++ ) {
+//     finalePrice = parseInt(thOfPrice[k].textContent.slice(1)) + finalePrice ;
     
-}
-console.log(finalePrice)
+// }
+// console.log(finalePrice)
 
 // if(finalePrice == NaN) {
 //     totl1.textContent = "$" +0
@@ -87,5 +94,4 @@ console.log(finalePrice)
 // }
 // totl1.textContent = "$" +finalePrice
 // totl2.textContent = totl1.textContent
-
 

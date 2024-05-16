@@ -81,5 +81,14 @@ buttonAdd.onclick = function() {
 
     nn++ ;
     localStorage.setItem("numberOfclick" , nn)
+
+    let span = document.querySelectorAll(".span")
+
+    span.forEach((span)=>{
+    span.textContent = nn
+})
     
 }
+
+
+

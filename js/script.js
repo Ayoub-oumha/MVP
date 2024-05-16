@@ -11,3 +11,12 @@ btnNav.onclick = function (){
     ul.style.display = "block" ;
     
 }
+
+
+// number of product that i add 
+let nClick = localStorage.getItem("numberOfclick") ;
+let span = document.querySelectorAll(".span")
+
+span.forEach((span)=>{
+    span.textContent = nClick
+})
