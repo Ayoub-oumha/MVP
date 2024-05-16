@@ -52,11 +52,36 @@ let totl1 = document.getElementById("Total1")
 let totl2 = document.getElementById("Total2")
 let finalePrice = 0 ;
 
+// lop for price
+if (thOfPrice.length > 0) {
+    for(let k = 0 ; k < thOfPrice.length ; k++ ) {
+        let toNumber =  parseFloat(thOfPrice[k].textContent.slice(1))
+        finalePrice = toNumber + finalePrice ;
 
+    }
+    
+} else {
+    finalePrice = 0
+}
+totl1.textContent = "$" +finalePrice.toFixed(2)
+totl2.textContent = totl1.textContent
+
+
+if(icon.length>0) {
 
 for (let j = 0 ; j < icon.length ; j ++) {
     icon[j].onclick = function(){
-        
+        let price =  localStorage.getItem("PricP"+j) ;
+        let pricTofloat = parseFloat(price.slice(1))
+        console.log(pricTofloat)
+        console.log(finalePrice)
+        finalePrice = finalePrice - pricTofloat
+        totl1.textContent = "$" +finalePrice.toFixed(2)
+        totl2.textContent = totl1.textContent
+        // let toNumber =  parseFloat(thOfPrice[j].textContent.slice(1))
+        // console.log(toNumber)
+        // console.log(finalePrice)
+
         localStorage.removeItem("titleP"+j) ;
         localStorage.removeItem("PricP"+j) ;
         localStorage.removeItem("imgP" + j) ;
@@ -65,33 +90,16 @@ for (let j = 0 ; j < icon.length ; j ++) {
         localStorage.setItem("numberOfclick" , nClick) ;
         trTableOne[j].remove() ;
 
-        
+
         let span = document.querySelectorAll(".span")
 
         span.forEach((span)=>{
-        span.textContent = nClick
+        span.textContent = nClick ;
+
+
 })
 
     }
 }
 
-
-
-// lop for price
-
-// console.log (parseInt(thOfPrice[0].textContent.slice(1)) )
-// for(let k = 0 ; k < thOfPrice.length ; k++ ) {
-//     finalePrice = parseInt(thOfPrice[k].textContent.slice(1)) + finalePrice ;
-    
-// }
-// console.log(finalePrice)
-
-// if(finalePrice == NaN) {
-//     totl1.textContent = "$" +0
-// }
-// else {
-//     totl1.textContent = "$" +finalePrice
-// }
-// totl1.textContent = "$" +finalePrice
-// totl2.textContent = totl1.textContent
-
+}
