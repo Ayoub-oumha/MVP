@@ -24,9 +24,6 @@ for(let i = 0 ; i < numberOfclick   ; i++) {
     
 
 
-    
-
-
 
     imgEle.setAttribute("src" , img)
     th1.appendChild(icon)
