@@ -16,11 +16,9 @@
     align-items: center;
     border:  1px solid rgba(157, 155, 155, 0.392)   ;
     height: 400px;
-    
 }
 .shop-product .section-images .big-image img {
     width: 80%;
-    
 }
 
 .shop-product .section-images .other-images {
