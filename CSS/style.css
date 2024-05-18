@@ -553,15 +553,12 @@ section .info button {
 .other-info .text {
   width: 30%;
 }
-
-
 header nav .iconBasket {
   position: relative;
 }
 header nav .iconBasket .span {
   background-color: red;
-  color: white;
-  
+  color: white; 
   border-radius: 50%;
   text-align: center;
   width: 20px;
