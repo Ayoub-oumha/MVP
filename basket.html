@@ -14,10 +14,19 @@
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="stylesheet" href="CSS/responsive.css">
     <style>
+        
+        .tableOne {
+            width: 100%;
+            background-color: orange;
+            overflow: hidden ;
+            
+        }
         .tableOne {
             width: 100%;
             text-align: center;
             margin-top: 20px;
+            overflow: hidden;
+            
         }
         .tableOne tr {
             text-align: center;
@@ -91,6 +100,21 @@
             margin-right: 80px;
             cursor: pointer;
         }
+        @media screen and (max-width : 500px) {
+        .tableOne {
+            width: 100px;
+            overflow-x: auto;
+            overflow-x: scroll;
+        }
+        .tableOne {
+            width: 30px;
+            border-collapse: collapse;
+            background-color: aqua;
+        }
+        
+        
+        
+        }
     </style>
 </head>
 
@@ -126,6 +150,7 @@
         <h2>#Cart <i  class="fa-solid fa-bag-shopping"></i></h2> 
         <p style="color: white; z-index: 10; font-size: 22px;"></p>  
     </section>
+    <div class="sectionTable">
     <table class="tableOne">
         <thead>
             <tr>
@@ -143,7 +168,7 @@
 
         </tbody>
     </table>
-
+    </div>
     <div class="cartTotale">
         <table class="tableTwo">
             <tr>
