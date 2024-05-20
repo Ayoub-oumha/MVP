@@ -60,6 +60,12 @@
         }
         }
     </style>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('tS8AbmfYRIG-8J4Fe')
+    </script>
 </head>
 
 <body>
@@ -96,14 +102,14 @@
     <!--  Section contact -->
     <section class="contact-form">
         <h4>Get in Touch</h4>
-        <form action="#" method="POST">
+        <form action="#" id="form" method="POST">
             
             <input type="text" placeholder="name" id="name" name="name" required>
             
             <input type="email" placeholder="email" id="email" name="email" required>
             
             <textarea id="message" placeholder="message..." name="message" rows="5" required></textarea>
-            <button type="submit">Send</button>
+            <button type="submit" id="button">Send</button>
         </form>
     </section>
     
@@ -160,8 +166,9 @@
         <p>©2024 CARPET BERBER. All Rights Reseverd.</p>
     </div>
         <script src="js/script.js" type="module"></script>
-        <script src="js/script-shop.js" type="module"></script>
-        <script src="js/script-sproduct.js" type="module"></script>
+        <script src="js/emal-contac-js.js" type="module"></script>
+        
+
 </body>
 
 </html>
