@@ -35,5 +35,69 @@
         "imag1" : "/images-2/product-4-img/img-cart-1.jpg" ,
         "imag2" : "/images-2/product-4-img/img-cart-2.jpg" ,
         "imag3" : "/images-2/product-4-img/img-cart-3.jpg" 
+    } ,
+    {
+        "NP" : "P5" ,
+        "title" : "KILIM RUG, HIEROGLYPHIC STYLE" ,
+        "price" : "$276.00" ,
+        "details" :"Small Kilim rug from the city of Khemisset is flat-woven in wool cotton in dominant shades of brown, orange and green. The patterns appear in relief, fringes are at both ends." ,
+        "imag1" : "/images-2/product-5-img/img-cart-1.jpg" ,
+        "imag2" : "/images-2/product-5-img/img-cart-2.jpg" ,
+        "imag3" : "/images-2/product-5-img/img-cart-3.jpg" 
+    } ,
+    {
+        "NP" : "P6" ,
+        "title" : "VINTAGE CONQUEROR RUG" ,
+        "price" : "$445.00" ,
+        "details" :"Small Kilim rug from the city of Khemisset is flat-woven in wool cotton in dominant shades of brown, orange and green. The patterns appear in relief, fringes are at both ends." ,
+        "imag1" : "/images-2/product-6-img/img-cart-1.jpg" ,
+        "imag2" : "/images-2/product-6-img/img-cart-2.jpg" ,
+        "imag3" : "/images-2/product-6-img/img-cart-3.jpg" 
+    } ,
+    {
+        "NP" : "P7" ,
+        "title" : "AZILAL CARPET TAUPE AND BEIGE INDIAN LOOK" ,
+        "price" : "$448.00" ,
+        "details" :"Small Kilim rug from the city of Khemisset is flat-woven in wool cotton in dominant shades of brown, orange and green. The patterns appear in relief, fringes are at both ends." ,
+        "imag1" : "/images-2/product-7-img/img-cart-1.jpg" ,
+        "imag2" : "/images-2/product-7-img/img-cart-2.jpg" ,
+        "imag3" : "/images-2/product-7-img/img-cart-3.jpg" 
+    } ,
+    {
+        "NP" : "P8" ,
+        "title" : "KILIM RUG COTTON AND WOOL TWO CROSSES IN SQUARES" ,
+        "price" : "$240.00" ,
+        "details" :"Small Kilim rug from the city of Khemisset is flat-woven in wool cotton in dominant shades of brown, orange and green. The patterns appear in relief, fringes are at both ends." ,
+        "imag1" : "/images-2/product-8-img/img-cart-1.jpg" ,
+        "imag2" : "/images-2/product-8-img/img-cart-2.jpg" ,
+        "imag3" : "/images-2/product-8-img/img-cart-3.jpg" 
+    } ,
+    {
+        "NP" : "P9" ,
+        "title" : "COLORFUL KILIM RUG IN DECORATED RECTANGLES" ,
+        "price" : "$350.00" ,
+        "details" :"Small Kilim rug from the city of Khemisset is flat-woven in wool cotton in dominant shades of brown, orange and green. The patterns appear in relief, fringes are at both ends." ,
+        "imag1" : "/images-2/product-9-img/img-cart-1.jpg" ,
+        "imag2" : "/images-2/product-9-img/img-cart-2.jpg" ,
+        "imag3" : "/images-2/product-9-img/img-cart-3.jpg" 
+    } ,
+    {
+        "NP" : "P10" ,
+        "title" : "KILIM RUG DUO COTTON AND WOOL, CROSS AND FIBULAE" ,
+        "price" : "$260.00" ,
+        "details" :"Small Kilim rug from the city of Khemisset is flat-woven in wool cotton in dominant shades of brown, orange and green. The patterns appear in relief, fringes are at both ends." ,
+        "imag1" : "/images-2/product-10-img/img-cart-1.jpg" ,
+        "imag2" : "/images-2/product-10-img/img-cart-2.jpg" ,
+        "imag3" : "/images-2/product-19-img/img-cart-3.jpg" 
+    } ,
+    {
+        "NP" : "P11" ,
+        "title" : "KILIM CARPET IN YELLOW, RED, GREEN, BLACK, BEIGE LINES" ,
+        "price" : "$132.00" ,
+        "details" :"Small Kilim rug from the city of Khemisset is flat-woven in wool cotton in dominant shades of brown, orange and green. The patterns appear in relief, fringes are at both ends." ,
+        "imag1" : "/images-2/product-4-img/img-cart-1.jpg" ,
+        "imag2" : "/images-2/product-4-img/img-cart-2.jpg" ,
+        "imag3" : "/images-2/product-4-img/img-cart-3.jpg" 
     }
+    
 ]
