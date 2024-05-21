@@ -103,3 +103,14 @@ for (let j = 0 ; j < icon.length ; j ++) {
 }
 
 }
+
+
+// button pay
+
+let sectionPay = document.getElementById("sectionPay")
+let btnPay = document.getElementById("btnPay")
+
+
+btnPay.onclick = function(){
+    sectionPay.style.display = "flex"
+}

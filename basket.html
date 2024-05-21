@@ -99,6 +99,59 @@
             margin-right: 80px;
             cursor: pointer;
         }
+        /* css paymetn */
+        .affiche-of-pay{
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            display: none;
+        }
+        .payment-form-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+    }
+
+        .payment-form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            
+        }
+
+        .payment-form-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .payment-form-container input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .payment-form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .payment-form-container button:hover {
+            background-color: #218838;
+        }
         @media screen and (max-width : 500px) {
         .sectionTable {
             width: 100%;
@@ -179,8 +232,31 @@
                 
             </tr>
         </table>
-        <button>pay</button>
+        <button id="btnPay">pay</button>
         
+    </div>
+    <div class="affiche-of-pay" id="sectionPay">
+        <div class="payment-form-container">
+            <form id="paymentForm">
+                <h2>Payment Form</h2>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" name="cardNumber" required pattern="\d{16}" title="Enter a valid 16-digit card number">
+    
+                <label for="expiry">Expiry Date</label>
+                <input type="text" id="expiry" name="expiry" required placeholder="MM/YY" pattern="\d{2}/\d{2}" title="Enter a valid expiry date in MM/YY format">
+    
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required pattern="\d{3}" title="Enter a valid 3-digit CVV">
+    
+                <button type="submit">Pay Now</button>
+            </form>
+        </div>
     </div>
     <!-- Footer Deja wajd hit fih bzaf tl content -->
     <footer class="section-p1">
